@@ -11353,65 +11353,37 @@ html {
   align-items: center;
 }
 
-#mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-}
-#mainNav .navbar-brand {
-  color: #fff;
-}
-#mainNav .navbar-nav {
-  margin-top: 1rem;
-}
-#mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
-}
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
-}
-#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
-}
-#mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
-}
-#mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.8rem;
+.icon {
+  color: #000;
 }
 
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-  }
-  #mainNav .navbar-brand {
-    font-size: 1.75em;
-    transition: font-size 0.3s;
-  }
-  #mainNav .navbar-nav {
-    margin-top: 0;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
-    background: #1abc9c;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
-    background: #1abc9c;
+#menu-nav {
+  background-color: #037971;
+}
+/* Desktop */
+@media only screen and (min-width: 580px) {
+  #side-bar {
+    height: 100%;
+    width: 10%;
   }
 
-  #mainNav.navbar-shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  #menu-nav {
+    width: 30%;
+    height: 40%;
+    border-radius: 25px;
   }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.5em;
+  
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 580px) {
+  #menu-nav {
+    width: 50%;
+    border-radius: 25px;
   }
 }
+
 .form-floating input.form-control,
 .form-floating textarea.form-control {
   font-size: 1.5rem;
@@ -11433,6 +11405,7 @@ html {
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
+  background-color: #2F323A;
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -11458,6 +11431,11 @@ html {
     font-size: 1.5rem;
   }
 }
+
+#portfolio {
+  background-color: #D8DAD3;  
+}
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
@@ -11497,6 +11475,13 @@ html {
   }
 }
 
+#about {
+  background-color: #2F323A;
+}
+
+#contact {
+  display: none;
+}
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
